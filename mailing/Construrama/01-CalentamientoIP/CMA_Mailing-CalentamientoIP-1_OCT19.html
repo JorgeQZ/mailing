@@ -140,7 +140,7 @@
             background-image: url('header-bg.png');
             background-color: #fff;
             background-size: cover;
-            background-position: right top;
+            background-position: 0 0;
             padding: 10px 0px 0px 20px;
             width: 46%;
         }
@@ -167,6 +167,13 @@
             margin-right: 16px;
             margin-bottom: -17px;
             margin-left: -10px;
+        }
+        
+        .i7below>.icon-header {
+            max-width: 24px;
+            margin-right: 6px;
+            margin-bottom: -5px;
+            margin-left: 6px;
         }
         /* CUERPO CONTENIDO  */
         
@@ -272,6 +279,7 @@
         .table-footer .logo-bottom-color {
             max-width: 180px;
             max-height: 28.33px;
+            margin-right: 40px;
         }
         
         .table-footer .last-text {
@@ -280,7 +288,7 @@
             color: #00185d;
             font-size: 12px;
             margin: 0;
-            padding-right: 40px;
+            margin-right: 40px;
         }
         
         a.link {
@@ -312,6 +320,18 @@
             }
         }
     </style>
+
+    <!--[if lt IE 7]> <style type="text/css">  .left-column-header {width: 45%; background-position: -2px 0;}</style><![endif]-->
+    <!--[if IE 7]>    <style type="text/css">  .left-column-header {width: 45%; background-position: -2px 0;}</style><![endif]-->
+    <!--[if IE 8]>    <style type="text/css">  .left-column-header {width: 45%; background-position: -2px 0;}</style><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <style type="text/css">
+        .left-column-header {
+            width: 45%;
+            background-position: -2px 0;
+        }
+    </style>
+    <!--<![endif]-->
 </head>
 
 <body class="body_class" bgcolor="#c2c2c2">
@@ -333,7 +353,7 @@
                                 <!--  header  -->
                                 <table class="header" border="0" cellspacing="0" width="100%" style="border-bottom: 3px solid #ff5e00;">
                                     <tr>
-                                        <td class="left-column-header" align="left" valign="middle" background="header-bg.png" bgcolor="white" width="46%">
+                                        <td class="left-column-header" align="left" valign="middle" background="header-bg.png" bgcolor="white">
                                             <table>
                                                 <tr>
                                                     <td>
@@ -347,15 +367,28 @@
                                                 </tr>
                                             </table>
                                         </td>
-                                        <td class="right-column-header" align="left" valign="middle" bgcolor="white" width="54%">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/9aa58eb5-aea3-4716-9f15-0150275e0dcd.png" alt="Cemento">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/31576b9a-d852-4cc6-bbb6-581ac07db2e6.png" alt="Varillas">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/685bcc66-7e3f-46e9-8d8d-458902cc343f.png" alt="Blocks">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/df2bb037-19c7-4ba2-9f0b-de95c5161371.png" alt="Rodillos">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/cad0f48b-d67b-4ff2-b19e-bf7a643fc5ac.png" alt="Tuberías">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/8805146d-b6b7-444e-bdfc-9b94c2b29945.png" alt="Conexiones">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/7c6ce27c-a64a-4866-a7ed-729c383f664c.png" alt="Carretillas">
-                                            <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/dc24478f-f270-4355-a4f7-c4b1331d9813.png" alt="Llaves">
+                                        <td class="right-column-header" align="left" valign="middle" bgcolor="white">
+                                            <!--[if lt IE 7]>    <div class="i7below"><![endif]-->
+                                            <!--[if IE 7]>       <div class="i7below"><![endif]-->
+                                            <!--[if IE 8]>       <div class="i7below"><![endif]-->
+                                            <!--[if gt IE 8]><!-->
+                                            <div class="i7below">
+                                                <!--<![endif]-->
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/9aa58eb5-aea3-4716-9f15-0150275e0dcd.png" alt="Cemento">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/31576b9a-d852-4cc6-bbb6-581ac07db2e6.png" alt="Varillas">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/685bcc66-7e3f-46e9-8d8d-458902cc343f.png" alt="Blocks">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/df2bb037-19c7-4ba2-9f0b-de95c5161371.png" alt="Rodillos">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/cad0f48b-d67b-4ff2-b19e-bf7a643fc5ac.png" alt="Tuberías">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/8805146d-b6b7-444e-bdfc-9b94c2b29945.png" alt="Conexiones">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/7c6ce27c-a64a-4866-a7ed-729c383f664c.png" alt="Carretillas">
+                                                <img class="icon-header" src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/dc24478f-f270-4355-a4f7-c4b1331d9813.png" alt="Llaves">
+                                                <!--[if gt IE 8]><!-->
+                                            </div>
+                                            <!--<![endif]-->
+                                            <!--[if IE 8]>    </div><![endif]-->
+                                            <!--[if IE 7]>    </div><![endif]-->
+                                            <!--[if lt IE 7]> </div><![endif]-->
+
                                         </td>
                                     </tr>
                                 </table>
@@ -439,12 +472,12 @@
                                             <br>
                                         </td>
                                     </tr>
-                                    <tr align="left " valign="middle ">
-                                        <td align="left " valign="middle ">
-                                            <table align="left " valign="middle" style="padding: 0 40px;">
+                                    <tr align="left" valign="middle">
+                                        <td align="left" valign="middle">
+                                            <table align="left" valign="middle">
                                                 <tr align="left" valign="middle">
                                                     <td align="left" valign="middle">
-                                                        <img src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/73711332-6fb9-4451-aaa1-9ee4277d3c38.png" alt="Construrama App " width="45" height="45" style="margin-right: 10px;" class="icon-app" style="max-height: 45px; max-width: 45px;">
+                                                        <img src="https://gallery.mailchimp.com/0bd2ae7dc71a141d633248c0c/images/73711332-6fb9-4451-aaa1-9ee4277d3c38.png" alt="Construrama App " width="45" height="45" class="icon-app" style="max-height: 45px; max-width: 45px; margin-left: 40px; margin-right: 10px;">
                                                     </td>
                                                     <td align="left " valign="middle " class="iconStoreCell">
                                                         <a href="https://apps.apple.com/mx/app/construrama/id1434422653" target="_blank">
